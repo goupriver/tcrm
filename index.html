@@ -79,6 +79,14 @@
     <!-- button -->
     <button id="copyText5">Copy</button>
 </article>
+    
+       <article>
+    <!-- text input field -->
+    <input id="inputText6" type="text" value="К сожалению, код уже не действителен. Напишите, когда можно будет выслать новый.">
+
+    <!-- button -->
+    <button id="copyText6">Copy</button>
+</article>
 </main>
 
 
@@ -131,6 +139,13 @@
         var btn5 = document.getElementById("copyText5");
         btn5.onclick = function() {
         text5.select();    
+        document.execCommand("copy");
+        }
+          // 
+        var text6 = document.getElementById("inputText6");
+        var btn6 = document.getElementById("copyText6");
+        btn6.onclick = function() {
+        text6.select();    
         document.execCommand("copy");
         }
     </script>
