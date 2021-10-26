@@ -71,6 +71,14 @@
     <!-- button -->
     <button id="copyText4">Copy</button>
 </article>
+    
+    <article>
+    <!-- text input field -->
+    <input id="inputText5" type="text" value="Напишите, пожалуйста, ваш контактный номер телефона.">
+
+    <!-- button -->
+    <button id="copyText5">Copy</button>
+</article>
 </main>
 
 
@@ -116,6 +124,13 @@
         var btn4 = document.getElementById("copyText4");
         btn4.onclick = function() {
         text4.select();    
+        document.execCommand("copy");
+        }
+         // 
+        var text5 = document.getElementById("inputText5");
+        var btn5 = document.getElementById("copyText5");
+        btn5.onclick = function() {
+        text5.select();    
         document.execCommand("copy");
         }
     </script>
