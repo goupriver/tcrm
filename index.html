@@ -8,32 +8,23 @@
     <style>
 
         main {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 20px;
         }
     /* styling text input field */
         input {
-          width: 450px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
           padding: 15px;
-          font-size: 15px;
           border: 1px solid #e0aeae;
+          width: 250px;
+          transition: all .8s;
         }
-        
-        /* styling button */
-        button {
-          padding: 15px;
-          font-size: 15px;
-          font-weight: bold;
-          background-color: #e0aeae;
-          border: none;
-          color: #ffffff;
-          cursor: pointer;
-        }
-        article {
-            margin-bottom: 20px;
-        }
+        input:hover {width: 600px;}
     </style>
     <title>COPY TXT</title>
 </head>
@@ -42,58 +33,34 @@
 <main>
 
     <article>
-        <!-- text input field -->
         <input id="inputText" type="text" value="Я составила обращение по вашему вопросу, коллеги из техподдержки уже занимаются его решением. Дадим обратную связь в течение 1-го календарного дня. Отслеживать статус обращения вы можете в разделе «Обращения» в приложении Тинькофф. В данный момент могу вам предложить выполнить перерегистрацию. Выйдите из приложения (на главном экране нажмите &quot;Профиль&quot; → &quot;Выйти из приложения&quot;). На экране ввода кода доступа нажмите &quot;Выйти&quot;, после войдите используя номер телефона. На этапе ввода пароля нажмите &quot;Не помню&quot;, после войдите по номеру карты.&quot; Если перерегистрация не поможет, необходимо будет дождаться ответа от техподдержки. Приношу вам свои извинения за временные неудобства.">
-
-        <!-- button -->
-        <button id="copyText">Copy</button>
 </article>
 <!-- #2 -->
 <article>
-    <!-- text input field -->
     <input id="inputText2" type="text" value="Здравствуйте. Напишите, пожалуйста, ваши ФИО и дату рождения.">
-
-    <!-- button -->
-    <button id="copyText2">Copy</button>
 </article>
 <!--  -->
 <article>
-    <!-- text input field -->
     <input id="inputText3" type="text" value="Напишите, пожалуйста, ваши ФИО и дату рождения.">
-
-    <!-- button -->
-    <button id="copyText3">Copy</button>
 </article>
 <!--  -->
 <article>
-    <!-- text input field -->
     <input id="inputText4" type="text" value="Уточните, пожалуйста, ваш вопрос.">
-
-    <!-- button -->
-    <button id="copyText4">Copy</button>
 </article>
     
-    <article>
-    <!-- text input field -->
+<article>
     <input id="inputText5" type="text" value="Напишите, пожалуйста, ваш контактный номер телефона.">
-
-    <!-- button -->
-    <button id="copyText5">Copy</button>
 </article>
     
-       <article>
-    <!-- text input field -->
+<article>
     <input id="inputText6" type="text" value="К сожалению, код уже недействителен. Напишите, когда можно будет выслать новый.">
-
-    <!-- button -->
-    <button id="copyText6">Copy</button>
 </article>
     
      <article>
-        <input id="inputText7" type="text" value="Номер телефона вы можете изменить самостоятельно в приложении, выбрав ваше имя, 
-                                        затем "Ваши данные", номер телефона, "Поменялся номер" и ввести актуальный номер телефона."
-         >
-        <button id="copyText7">Copy</button>
+        <input id="inputText7" type="text" value="Номер телефона вы можете изменить самостоятельно в приложении, выбрав ваше имя, затем 
+        &quot;ваши данные&quot; →  номер телефона  →  &quot;Поменялся номер&quot;   →  введите 
+        номер телефона и нажмите &quot;Готово&quot;."
+        >
     </article>
 </main>
 
@@ -101,65 +68,44 @@
 
     
     <script>
-        /* return input field to variable text */
         var text = document.getElementById("inputText");
-
-        /* return button to variable btn */
-        var btn = document.getElementById("copyText");
-
-        /* call function on button click */
-        btn.onclick = function() {
+        text.onclick = function() {
         text.select();    
         document.execCommand("copy");
         }
-
-
-         /* return input field to variable text */
+// 
         var text2 = document.getElementById("inputText2");
-
-        /* return button to variable btn */
-        var btn2 = document.getElementById("copyText2");
-
-        /* call function on button click */
-        btn2.onclick = function() {
+        text2.onclick = function() {
         text2.select();    
         document.execCommand("copy");
         }
+// 
         var text3 = document.getElementById("inputText3");
-
-        /* return button to variable btn */
-        var btn3 = document.getElementById("copyText3");
-
-        /* call function on button click */
-        btn3.onclick = function() {
+        text3.onclick = function() {
         text3.select();    
         document.execCommand("copy");
         }
         // 
         var text4 = document.getElementById("inputText4");
-        var btn4 = document.getElementById("copyText4");
-        btn4.onclick = function() {
+        text4.onclick = function() {
         text4.select();    
         document.execCommand("copy");
         }
          // 
         var text5 = document.getElementById("inputText5");
-        var btn5 = document.getElementById("copyText5");
-        btn5.onclick = function() {
+        text5.onclick = function() {
         text5.select();    
         document.execCommand("copy");
         }
           // 
         var text6 = document.getElementById("inputText6");
-        var btn6 = document.getElementById("copyText6");
-        btn6.onclick = function() {
+        text6.onclick = function() {
         text6.select();    
         document.execCommand("copy");
         }
          // 
         var text7 = document.getElementById("inputText7");
-        var btn7 = document.getElementById("copyText7");
-        btn7.onclick = function() {
+        text7.onclick = function() {
         text7.select();    
         document.execCommand("copy");
         }
