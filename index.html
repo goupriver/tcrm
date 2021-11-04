@@ -87,6 +87,13 @@
     <!-- button -->
     <button id="copyText6">Copy</button>
 </article>
+    
+     <article>
+        <input id="inputText7" type="text" value="Номер телефона вы можете изменить самостоятельно в приложении, выбрав ваше имя, 
+                                        затем "Ваши данные", номер телефона, "Поменялся номер" и ввести актуальный номер телефона."
+         >
+        <button id="copyText7">Copy</button>
+    </article>
 </main>
 
 
@@ -146,6 +153,13 @@
         var btn6 = document.getElementById("copyText6");
         btn6.onclick = function() {
         text6.select();    
+        document.execCommand("copy");
+        }
+         // 
+        var text7 = document.getElementById("inputText7");
+        var btn6 = document.getElementById("copyText7");
+        btn7.onclick = function() {
+        text7.select();    
         document.execCommand("copy");
         }
     </script>
