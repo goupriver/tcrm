@@ -54,16 +54,7 @@
     
 <article>
     <input id="inputText6" type="text" value="К сожалению, код уже недействителен. Напишите, когда можно будет выслать новый.">
-</article>
-    
-<article>
-    <input id="inputText6" type="text" value="Как отключить ассистента Олега? <br />
-Можно несколькими способами:<br />
-1. Через мессенджер, в котором был подключён.<br />
-2. В мобильном приложении выбрать &quot;Еще&quot;, &quot;Настройки&quot;,&quot;Приложение&quot;, &quot;Голосовой ассистент Олег&quot;, нужно, чтобы плашка была слева, чтобы отключить ассистента.<br />
-3. По голосовой команде &quot;Отключить ассистента Олега&quot; или "&quot;cтоп Олег&quot;">
-</article>
-    
+</article>   
     
      <article>
         <input id="inputText7" type="text" value="Номер телефона вы можете изменить самостоятельно в приложении, выбрав ваше имя, затем 
@@ -71,6 +62,13 @@
         номер телефона и нажмите &quot;Готово&quot;."
         >
     </article>
+    <article>
+    <input id="inputText8" type="text" value="Как отключить ассистента Олега? <br />
+Можно несколькими способами:<br />
+1. Через мессенджер, в котором был подключён.<br />
+2. В мобильном приложении выбрать &quot;Еще&quot;, &quot;Настройки&quot;,&quot;Приложение&quot;, &quot;Голосовой ассистент Олег&quot;, нужно, чтобы плашка была слева, чтобы отключить ассистента.<br />
+3. По голосовой команде &quot;Отключить ассистента Олега&quot; или "&quot;cтоп Олег&quot;">
+</article>
 </main>
 
 
@@ -116,6 +114,12 @@
         var text7 = document.getElementById("inputText7");
         text7.onclick = function() {
         text7.select();    
+        document.execCommand("copy");
+        }
+        // 
+        var text8 = document.getElementById("inputText8");
+        text8.onclick = function() {
+        text8.select();    
         document.execCommand("copy");
         }
     </script>
