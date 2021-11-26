@@ -4,124 +4,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Document</title>
 
-        main {
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            gap: 20px;
-        }
-    /* styling text input field */
-        input {
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 700;
-            font-size: 16px;
-            text-align: center;
-          padding: 15px;
-          border: 1px solid #e0aeae;
-          width: 250px;
-          transition: all .8s;
-        }
-        input:hover {width: 600px;}
+    <style>
+        body {
+  margin: 0;
+}
+.copy_link_mess{
+line-height:40px;
+border-radius:5px;
+background:#1DA1F2;
+color:#fff;
+position:fixed;
+padding:0 15px;
+z-index:99;
+bottom:30px;
+margin-left: 50%;
+transform: translateX(-50%);
+display:none;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.block_style {
+  margin-bottom: 10px;
+  padding: 0 2rem;
+  border: 2px solid #cccccc;
+  border-radius: 0.3rem;
+  max-width: 200px;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  cursor: pointer;
+  overflow: hidden;
+  width: auto;
+  text-align: justify;
+  transition: max-width 0.6s ease-in-out;
+}
+
+.block_style:hover {
+  border: 2px solid 232629;
+  max-width: 400px;
+}
+.block_style:active {
+  border: 2px solid #fff;
+  background: #5c8aff;
+  color: #fff;
+}
     </style>
-    <title>COPY TXT</title>
+
+    <script>
+
+          jQuery(document).ready(function($){
+        $('.text_copy_link1').click(function() {
+        var $text_copy = $(this);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($text_copy.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.copy_link_mess').fadeIn(400);
+        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
+        });
+        });
+        // 
+          jQuery(document).ready(function($){
+        $('.text_copy_link2').click(function() {
+        var $text_copy = $(this);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($text_copy.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.copy_link_mess').fadeIn(400);
+        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
+        });
+        });
+        // 
+        jQuery(document).ready(function($){
+        $('.text_copy_link3').click(function() {
+        var $text_copy = $(this);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($text_copy.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.copy_link_mess').fadeIn(400);
+        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
+        });
+        });
+        // 
+          jQuery(document).ready(function($){
+        $('.text_copy_link4').click(function() {
+        var $text_copy = $(this);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($text_copy.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.copy_link_mess').fadeIn(400);
+        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
+        });
+        });
+        // 
+        jQuery(document).ready(function($){
+        $('.text_copy_link5').click(function() {
+        var $text_copy = $(this);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($text_copy.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.copy_link_mess').fadeIn(400);
+        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
+        });
+        });
+        // 
+          jQuery(document).ready(function($){
+        $('.text_copy_link6').click(function() {
+        var $text_copy = $(this);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($text_copy.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.copy_link_mess').fadeIn(400);
+        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
+        });
+        });
+        // 
+        jQuery(document).ready(function($){
+        $('.text_copy_link7').click(function() {
+        var $text_copy = $(this);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($text_copy.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.copy_link_mess').fadeIn(400);
+        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
+        });
+        });
+        // 
+          jQuery(document).ready(function($){
+        $('.text_copy_link8').click(function() {
+        var $text_copy = $(this);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($text_copy.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.copy_link_mess').fadeIn(400);
+        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
+        });
+        });
+        // 
+
+    </script>
+
 </head>
 <body>
-
-<main>
-
-    <article>
-        <input id="inputText" type="text" value="Я составила обращение по вашему вопросу, коллеги из техподдержки уже занимаются его решением. Дадим обратную связь в течение 1-го календарного дня. Отслеживать статус обращения вы можете в разделе «Обращения» в приложении Тинькофф. В данный момент могу вам предложить выполнить перерегистрацию. Выйдите из приложения (на главном экране нажмите &quot;Профиль&quot; → &quot;Выйти из приложения&quot;). На экране ввода кода доступа нажмите &quot;Выйти&quot;, после войдите используя номер телефона. На этапе ввода пароля нажмите &quot;Не помню&quot;, после войдите по номеру карты.&quot; Если перерегистрация не поможет, необходимо будет дождаться ответа от техподдержки. Приношу вам свои извинения за временные неудобства.">
-</article>
-<!-- #2 -->
-<article>
-    <input id="inputText2" type="text" value="Здравствуйте. Напишите, пожалуйста, ваши ФИО и дату рождения.">
-</article>
-<!--  -->
-<article>
-    <input id="inputText3" type="text" value="Напишите, пожалуйста, ваши ФИО и дату рождения.">
-</article>
-<!--  -->
-<article>
-    <input id="inputText4" type="text" value="Уточните, пожалуйста, ваш вопрос.">
-</article>
-    
-<article>
-    <input id="inputText5" type="text" value="Напишите, пожалуйста, ваш контактный номер телефона.">
-</article>
-    
-<article>
-    <input id="inputText6" type="text" value="К сожалению, код уже недействителен. Напишите, когда можно будет выслать новый.">
-</article>   
-    
-     <article>
-        <input id="inputText7" type="text" value="Номер телефона вы можете изменить самостоятельно в приложении, выбрав ваше имя, затем 
-        &quot;ваши данные&quot; →  номер телефона  →  &quot;Поменялся номер&quot;   →  введите 
-        номер телефона и нажмите &quot;Готово&quot;."
-        >
-    </article>
-    <article>
-    <input id="inputText8" type="text" value="Как отключить ассистента Олега? 
-Можно несколькими способами:
-1. Через мессенджер, в котором был подключён.
-2. В мобильном приложении выбрать &quot;Еще&quot;, &quot;Настройки&quot;,&quot;Приложение&quot;, &quot;Голосовой ассистент Олег&quot;, нужно, чтобы плашка была слева, чтобы отключить ассистента.
-3. По голосовой команде &quot;Отключить ассистента Олега&quot; или "&quot;cтоп Олег&quot;">
-</article>
-</main>
+    <div class="container">
+      <div class="text_copy_link1 block_style">
+        Я составила обращение по вашему вопросу, коллеги из техподдержки уже занимаются его решением. Дадим обратную связь в течение 1-го календарного дня. Отслеживать статус обращения вы можете в разделе «Обращения» в приложении Тинькофф. В данный момент могу вам предложить выполнить перерегистрацию. Выйдите из приложения (на главном экране нажмите "Профиль" → "Выйти из приложения"). На экране ввода кода доступа нажмите "Выйти", после войдите используя номер телефона. На этапе ввода пароля нажмите "Не помню", после войдите по номеру карты." Если перерегистрация не поможет, необходимо будет дождаться ответа от техподдержки. Приношу вам свои извинения за временные неудобства.
+    </div>
+    <!--  -->
+    <div class="text_copy_link2 block_style">
+      Здравствуйте. Напишите, пожалуйста, ваши ФИО и дату рождения.
+    </div>
+    <!--  -->
+    <div class="text_copy_link3 block_style">
+      Напишите, пожалуйста, ваши ФИО и дату рождения.
+    </div>
+    <!--  -->
+    <div class="text_copy_link4 block_style">
+      Уточните, пожалуйста, ваш вопрос.
+    </div>
+    <!--  -->
+    <div class="text_copy_link5 block_style">
+      Напишите, пожалуйста, ваш контактный номер телефона.
+    </div>
+    <!--  -->
+    <div class="text_copy_link6 block_style">
+      К сожалению, код уже недействителен. Напишите, когда можно будет выслать новый.
+    </div>
+    <!--  -->
+    <div class="text_copy_link7 block_style">
+      Номер телефона вы можете изменить самостоятельно в приложении, выбрав ваше имя, затем         "ваши данные" →  номер телефона  →  "Поменялся номер"   →  введите         номер телефона и нажмите "Готово".
+    </div>
+    <!--  -->
+    <div class="text_copy_link8 block_style">
+      Как отключить ассистента Олега?
+          
+      Можно несколькими способами:
+      1. Через мессенджер, в котором был подключён.
+      2. В мобильном приложении выбрать "Еще", "Настройки","Приложение", "Голосовой ассистент Олег", нужно, чтобы плашка была слева, чтобы отключить ассистента.
+      3. По голосовой команде "Отключить ассистента Олега" или "стоп Олег"
+    </div>
+    <!--  -->
 
 
 
-    
-    <script>
-        var text = document.getElementById("inputText");
-        text.onclick = function() {
-        text.select();    
-        document.execCommand("copy");
-        }
-// 
-        var text2 = document.getElementById("inputText2");
-        text2.onclick = function() {
-        text2.select();    
-        document.execCommand("copy");
-        }
-// 
-        var text3 = document.getElementById("inputText3");
-        text3.onclick = function() {
-        text3.select();    
-        document.execCommand("copy");
-        }
-        // 
-        var text4 = document.getElementById("inputText4");
-        text4.onclick = function() {
-        text4.select();    
-        document.execCommand("copy");
-        }
-         // 
-        var text5 = document.getElementById("inputText5");
-        text5.onclick = function() {
-        text5.select();    
-        document.execCommand("copy");
-        }
-          // 
-        var text6 = document.getElementById("inputText6");
-        text6.onclick = function() {
-        text6.select();    
-        document.execCommand("copy");
-        }
-         // 
-        var text7 = document.getElementById("inputText7");
-        text7.onclick = function() {
-        text7.select();    
-        document.execCommand("copy");
-        }
-        // 
-        var text8 = document.getElementById("inputText8");
-        text8.onclick = function() {
-        text8.select();    
-        document.execCommand("copy");
-        }
-    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>   
+      
+      <div class="copy_link_mess">Скопировано</div>
+      
 </body>
 </html>
