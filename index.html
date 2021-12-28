@@ -25,6 +25,9 @@ transform: translateX(-50%);
 display:none;
 box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
 }
+.copy_link_mess--active {
+  display: block;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -57,149 +60,40 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
   background: #5c8aff;
   color: #fff;
 }
-    </style>
-
-    <script>
-
-          jQuery(document).ready(function($){
-        $('.text_copy_link1').click(function() {
-        var $text_copy = $(this);
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($text_copy.text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $('.copy_link_mess').fadeIn(400);
-        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
-        });
-        });
-        // 
-          jQuery(document).ready(function($){
-        $('.text_copy_link2').click(function() {
-        var $text_copy = $(this);
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($text_copy.text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $('.copy_link_mess').fadeIn(400);
-        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
-        });
-        });
-        // 
-        jQuery(document).ready(function($){
-        $('.text_copy_link3').click(function() {
-        var $text_copy = $(this);
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($text_copy.text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $('.copy_link_mess').fadeIn(400);
-        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
-        });
-        });
-        // 
-          jQuery(document).ready(function($){
-        $('.text_copy_link4').click(function() {
-        var $text_copy = $(this);
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($text_copy.text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $('.copy_link_mess').fadeIn(400);
-        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
-        });
-        });
-        // 
-        jQuery(document).ready(function($){
-        $('.text_copy_link5').click(function() {
-        var $text_copy = $(this);
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($text_copy.text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $('.copy_link_mess').fadeIn(400);
-        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
-        });
-        });
-        // 
-          jQuery(document).ready(function($){
-        $('.text_copy_link6').click(function() {
-        var $text_copy = $(this);
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($text_copy.text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $('.copy_link_mess').fadeIn(400);
-        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
-        });
-        });
-        // 
-        jQuery(document).ready(function($){
-        $('.text_copy_link7').click(function() {
-        var $text_copy = $(this);
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($text_copy.text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $('.copy_link_mess').fadeIn(400);
-        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
-        });
-        });
-        // 
-          jQuery(document).ready(function($){
-        $('.text_copy_link8').click(function() {
-        var $text_copy = $(this);
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($text_copy.text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        $('.copy_link_mess').fadeIn(400);
-        setTimeout(function(){$('.copy_link_mess').fadeOut(400);},1000);
-        });
-        });
-        // 
-
-    </script>
+    </style>  
 
 </head>
 <body>
     <div class="container">
-      <div class="text_copy_link1 block_style">
+      <div class="text_copy block_style">
         Я составила обращение по вашему вопросу, коллеги из техподдержки уже занимаются его решением. Дадим обратную связь в течение 1-го календарного дня. Отслеживать статус обращения вы можете в разделе «Обращения» в приложении Тинькофф. В данный момент могу вам предложить выполнить перерегистрацию. Выйдите из приложения (на главном экране нажмите "Профиль" → "Выйти из приложения"). На экране ввода кода доступа нажмите "Выйти", после войдите используя номер телефона. На этапе ввода пароля нажмите "Не помню", после войдите по номеру карты." Если перерегистрация не поможет, необходимо будет дождаться ответа от техподдержки. Приношу вам свои извинения за временные неудобства.
     </div>
     <!--  -->
-    <div class="text_copy_link2 block_style">
+    <div class="text_copy block_style">
       Здравствуйте. Напишите, пожалуйста, ваши ФИО и дату рождения.
     </div>
     <!--  -->
-    <div class="text_copy_link3 block_style">
+    <div class="text_copy block_style">
       Напишите, пожалуйста, ваши ФИО и дату рождения.
     </div>
     <!--  -->
-    <div class="text_copy_link4 block_style">
+    <div class="text_copy block_style">
       Уточните, пожалуйста, ваш вопрос.
     </div>
     <!--  -->
-    <div class="text_copy_link5 block_style">
+    <div class="text_copy block_style">
       Напишите, пожалуйста, ваш контактный номер телефона.
     </div>
     <!--  -->
-    <div class="text_copy_link6 block_style">
+    <div class="text_copy block_style">
       К сожалению, код уже недействителен. Напишите, когда можно будет выслать новый.
     </div>
     <!--  -->
-    <div class="text_copy_link7 block_style">
+    <div class="text_copy block_style">
       Номер телефона вы можете изменить самостоятельно в приложении, выбрав ваше имя, затем         "ваши данные" →  номер телефона  →  "Поменялся номер"   →  введите         номер телефона и нажмите "Готово".
     </div>
     <!--  -->
-    <div class="text_copy_link8 block_style">
+    <div class="text_copy block_style">
       Как отключить ассистента Олега?
           
       Можно несколькими способами:
@@ -209,7 +103,14 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
     </div>
     <!--  -->
 
-
+<script>
+    document.querySelector('.container')
+            .addEventListener('click', (e)=> {
+              if (!e.target.classList.contains('text_copy')) return;
+              navigator.clipboard 
+                       .writeText(e.target.innerText)
+    })
+</script>
 
 
 
