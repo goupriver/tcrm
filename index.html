@@ -4,30 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">k
+    <title>TCRM</title>
 
     <style>
-        body {
-  margin: 0;
-}
-.copy_link_mess{
-line-height:40px;
-border-radius:5px;
-background:#1DA1F2;
-color:#fff;
-position:fixed;
-padding:0 15px;
-z-index:99;
-bottom:30px;
-margin-left: 50%;
-transform: translateX(-50%);
-display:none;
-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
-}
-.copy_link_mess--active {
-  display: block;
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -35,6 +15,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
   align-items: center;
   height: 100vh;
 }
+
 .block_style {
   margin-bottom: 10px;
   padding: 0 2rem;
@@ -47,7 +28,6 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
   cursor: pointer;
   overflow: hidden;
   width: auto;
-  text-align: justify;
   transition: max-width 0.6s ease-in-out;
 }
 
@@ -55,6 +35,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
   border: 2px solid 232629;
   max-width: 400px;
 }
+
 .block_style:active {
   border: 2px solid #fff;
   background: #5c8aff;
@@ -104,43 +85,12 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
     <!--  -->
 
 <script>
-    document.querySelector('.container')
-            .addEventListener('click', (e)=> {
-              if (!e.target.classList.contains('text_copy')) return;
-              navigator.clipboard 
-                       .writeText(e.target.innerText)
+  document.querySelector('.container').addEventListener('click', (e)=> {
+    if (!e.target.classList.contains('text_copy')) return;
+    navigator.clipboard 
+             .writeText(e.target.innerText);
     })
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>   
-      
-      <div class="copy_link_mess">Скопировано</div>
-      
 </body>
 </html>
