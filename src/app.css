@@ -131,5 +131,5 @@ body {
 
 .showTarget.active {
   opacity: 1;
-  transition: opacity 4s ease-in'-out;
+  transition: opacity 4s ease-in-out;
 }
