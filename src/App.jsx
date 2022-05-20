@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import "./app.css";
 import useWriteText from "./useWriteText";
 import Navigation from "./Navigation";
 import Posts from "./Posts";
-import database from "./database";
 import { getDatabase, ref, set, onValue, remove } from "firebase/database";
 
 function App() {
